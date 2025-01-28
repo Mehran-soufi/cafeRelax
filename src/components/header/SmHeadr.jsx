@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import logo from "../../assets/logo/logo.webp";
 import { RiMenu3Fill } from "react-icons/ri";
@@ -6,7 +6,19 @@ import MenuHeader from "./MenuHeader";
 import { AnimatePresence } from "framer-motion";
 
 function SmHeadr() {
+  
   const [menuActive, setMenuActive] = useState(false);
+  
+useEffect(() => {
+  if (menuActive) {
+  document.body.classList.add("no-scroll");
+  } else {
+  document.body.classList.remove("no-scroll");
+  }
+  return () => {
+  document.body.classList.remove("no-scroll");
+  };
+  }, [menuActive]);
   return (
     <>
       <nav className="w-11/12 mx-auto flex justify-between items-center">

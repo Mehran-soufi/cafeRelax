@@ -20,6 +20,10 @@ body {
   background: oklch(0.13 0.028 261.692);
 }
 
+.no-scroll {
+  overflow: hidden;
+  }
+
 /* scroll bar */
 ::-webkit-scrollbar {
   width: 7px;
