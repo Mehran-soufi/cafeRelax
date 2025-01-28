@@ -14,6 +14,7 @@
   box-sizing: border-box;
 }
 body {
+  overflow-x: hidden;
   direction: rtl;
   font-family: "Iranian-Sans";
   background: oklch(0.13 0.028 261.692);
