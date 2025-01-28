@@ -3,8 +3,8 @@
 
 /* font import */
 @font-face {
-  font-family: "Iranian-Sans";
-  src: url("./fonts/iranian sans/Iranian Sans.ttf");
+  font-family: 'Iranian-Sans';
+  src: url('/fonts/iranian sans/Iranian Sans.ttf');
 }
 
 /* all styles */
